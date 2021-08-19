@@ -1,0 +1,29 @@
+<header>
+  <nav class="navbar navbar-expand-md">
+    <div> <a href="https://idspicturedesk.com" class="navbar-brand">How it all started</a></div>
+    <ul class="navbar-nav">
+      <li><a class="nav-link" href="https://myids.co">MyIDS</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li><a class="nav-link" href="https://locationfinder.ai">Locationfinder</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li><a class="nav-link" href="https://myids.co">MyIDS</a></li>
+      </ul>
+    <ul class="navbar-nav">
+      <li><a class="nav-link" routerLink="/">Home</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li><a *ngIf="!this.hardcodedAuthanticationService.isUserLoggedIn()" class="nav-link" routerLink="/">Login</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li><a *ngIf="this.hardcodedAuthanticationService.isUserLoggedIn()" class="nav-link" routerLink="/todos">Todo list</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li><a *ngIf="this.hardcodedAuthanticationService.isUserLoggedIn()" class="nav-link" routerLink="/welcome">Welcome</a></li>
+    </ul>
+    <ul class="navbar-nav">
+      <li><a *ngIf="this.hardcodedAuthanticationService.isUserLoggedIn()" class="nav-link" routerLink="/logout">logout</a></li>
+    </ul>
+  </nav>
+</header>

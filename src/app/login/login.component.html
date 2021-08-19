@@ -1,0 +1,14 @@
+<H1>Login!</H1>
+
+<div class="container">
+  <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
+
+  <div>
+
+      <input name="uname" type="text" placeholder="Username..." [(ngModel)]="uname" >
+      <input name="passwd" type="password" autocomplete="off" placeholder="Password..."  [(ngModel)]="password">
+      <input name="qr_code" type="text" placeholder="Auth code (2FA users)" style="display:none;">
+      <button type="submit"  (click)="handleLogin()">login</button>
+  </div>
+</div>
+
